@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    text-align: center;
+    list-style-position: inside;
+}
+ul,ol {
+    padding: 0;
+}
