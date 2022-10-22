@@ -1,0 +1,11 @@
+p{
+    color: red;
+    border: 2px red solid;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+p:hover{
+    background-color: darkred;
+    color: white;
+}
