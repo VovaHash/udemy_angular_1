@@ -7,16 +7,18 @@
       class="form-control" 
       [(ngModel)]="serverName"
       placeholder="Enter the name of the server ...">
+
       <button class="btn btn-primary"
       [disabled]="!allowNewServer"
       (click)="onCreateServer()">
         {{buttonStatus}}
       </button>
+
       <p *ngIf="serverCreated">Server was created. Server name is {{serverName}}</p>
-      
+
       <hr />
-      <app-server></app-server>
-      <app-server></app-server>
+      
+      <app-server *ngFor="let serv of servers"></app-server>
     </div>
   </div>
 </div>
